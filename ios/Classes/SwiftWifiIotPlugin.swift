@@ -149,6 +149,7 @@ public class SwiftWifiIotPlugin: NSObject, FlutterPlugin {
                             print("Connected to '\(sSSID ?? "<Unknown Network>")'")
                             result(true)
                         } else {
+                            print("LOCAL DESCRIPTION '\(error?.localizedDescription)'")
                             print("Not Connected")
                             result(false)
                         }
